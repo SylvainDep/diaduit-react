@@ -5,10 +5,12 @@ const Navbar = styled.div`
     display: flex;
     width: 100%;
     height: 60px;
-
-    li {
-      padding: 0 20px;
-    }
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
 `;
 
 const MenuListLeft = styled.ul`
@@ -19,6 +21,10 @@ const MenuListLeft = styled.ul`
     font-weight: 500;
     color: ${dark_grey};
     letter-spacing: 0.3px;
+
+    li {
+      padding: 0 20px;
+    }
 `;
 
 const MenuListRight = styled.ul`
@@ -26,6 +32,10 @@ const MenuListRight = styled.ul`
     list-style-type: none;
     padding-left: 0;
     color: ${light_grey};
+
+    li {
+      padding-left: 20px;
+    }
 `;
 
 export default {
