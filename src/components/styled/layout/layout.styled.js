@@ -21,7 +21,7 @@ const ContentArea = styled.div`
 
 const Grid = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${props => props.close ? 'center' : 'space-between'};
     align-items: ${props => props.top ? 'flex-start' : 'center'};
     height: 100%;
     flex: 1;
@@ -34,6 +34,10 @@ const PageContent = styled.div`
     align-items: flex-start;
     height: 100%;
     width: 100%;
+
+    > div:not(:last-child) {
+      margin-right: 20px;
+    }
 `;
 
 const WidgetGrid = styled.div`

@@ -60,12 +60,21 @@ const WidgetContainer = styled.div`
 `;
 
 const WidgetElementContainer = styled.div`
-    padding: 20px 20px 0 20px;
+    padding: 20px;
     background-color: #fdfdfd;
     border-radius: 5px;
     border: 1px solid #ede9e9;
     margin-bottom: 18px;
     color: #797979;
+
+    p, h3, h4 {
+      margin-bottom: 0;
+      margin-top: 1em;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
 `;
 
 const Button = styled.a`
@@ -77,7 +86,6 @@ const Button = styled.a`
 
 const SidebarContainer = styled.div`
     flex-basis: 250px;
-    margin-right: 20px;
 `;
 
 const MainContentContainer = styled.div`
@@ -89,6 +97,11 @@ const Medaillon = styled.div`
     width: 60px;
     background-color: purple;
     border-radius: 30px;
+    margin-right: 20px;
+`;
+
+const MedaillonText = styled.div`
+    flex: 1;
 `;
 
 const GalleryItem = styled.div`
@@ -196,6 +209,7 @@ export default {
     SidebarContainer,
     MainContentContainer,
     Medaillon,
+    MedaillonText,
     WidgetElementContainer,
     GalleryItem,
     GalleryGrid,
